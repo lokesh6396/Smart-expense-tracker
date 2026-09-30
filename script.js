@@ -14,12 +14,24 @@ function addTransaction() {
     const type =
         document.getElementById("type").value;
 
-    if (!description || amount <= 0) {
-
+    if (!description && amount <= 0) {
         alert(
-            "Please enter a description and a valid amount greater than zero."
+            "Please enter a transaction description and an amount greater than zero."
         );
+        return;
+    }
 
+    if (!description) {
+        alert(
+            "Please enter a transaction description."
+        );
+        return;
+    }
+
+    if (amount <= 0) {
+        alert(
+            "Please enter an amount greater than zero."
+        );
         return;
     }
 
@@ -43,9 +55,7 @@ function setBudget() {
         Number(document.getElementById("budget").value);
 
     if (budget <= 0) {
-
         alert("Please enter a valid monthly budget.");
-
         return;
     }
 
@@ -72,13 +82,9 @@ function updateDashboard() {
     transactions.forEach(transaction => {
 
         if (transaction.type === "income") {
-
             income += transaction.amount;
-
         } else {
-
             expense += transaction.amount;
-
         }
 
         const item =
