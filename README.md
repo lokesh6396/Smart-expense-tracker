@@ -24,6 +24,10 @@ system designed to help users monitor their income and expenses.
 
 ## Future Improvements
 
+## Development Status
+
+The initial expense tracking interface has been implemented.
+
 - User authentication
 - Monthly budgets
 - Spending analytics
