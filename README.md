@@ -2,8 +2,7 @@
 
 ## Project Overview
 
-The Smart Expense Tracker is a web-based financial management
-system designed to help users monitor their income and expenses.
+Smart Expense Tracker provides tools for tracking income, expenses, and budgets.
 
 ## Features
 
